@@ -1,29 +1,24 @@
-<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+<nav class="navbar navbar-toggleable-md navbar-light py-4 bg-faded">
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a class="navbar-brand" href="#">Mover</a>
+
+  <a class="navbar-brand" href="#">mover.</a>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <%if (!user_signed_in?) %>
-        <li><%= link_to "Login", new_user_session_path%></li>
-        <li><%= link_to "Sign Up", new_user_registration_path%></li>
+        <li><%= link_to "Log In", new_user_session_path %></li>
+        <li><%= link_to "Sign Up", new_user_registration_path %></li>
       <%else%>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Manage Listings <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">List Your Vehicle</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Your Reservations</a>
-        </li>
-        <li class="nav-item">
-         <a class="nav-link" href="#">Your Trips</a>
-        </li>
-
+        <a class="nav-item nav-link active" href="#">Plan for a move<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">Mover</a>
+        <a class="nav-link" href="#">Moving</a>
+        <a class="nav-link" href="#">Moves</a>
+        <a class="nav-link" href="#">Edit Profile</a>
+        <a class="nav-link" href="#">Log Out</a>
+<!--
         <li><%= link_to "Edit Profile", edit_user_registration_path%></li>
-        <li><%= link_to "Log out", destroy_user_session_path, method: :delete%></li>
+        <li><%= link_to "Log out", destroy_user_session_path, method: :delete%></li> -->
       <%end%>
 
     </ul>
