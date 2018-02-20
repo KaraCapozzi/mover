@@ -5,7 +5,7 @@
 
   <a class="navbar-brand" href="#">mover.</a>
   <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
+    <ul class="navbar-nav ml-md-auto">
       <%if (!user_signed_in?) %>
         <li><%= link_to "Log In", new_user_session_path %></li>
         <li><%= link_to "Sign Up", new_user_registration_path %></li>
@@ -14,12 +14,23 @@
         <a class="nav-link" href="#">Mover</a>
         <a class="nav-link" href="#">Moving</a>
         <a class="nav-link" href="#">Moves</a>
-        <a class="nav-link" href="#">Edit Profile</a>
-        <a class="nav-link" href="#">Log Out</a>
-<!--
-        <li><%= link_to "Edit Profile", edit_user_registration_path%></li>
-        <li><%= link_to "Log out", destroy_user_session_path, method: :delete%></li> -->
+
+
+
+        <div class="dropdown">
+           <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             <%= current_user.email%>
+           </button>
+           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+             <li class="nav-item"><%= link_to "Edit Profile", edit_user_registration_path%></li>
+             <li class="nav-item"><%= link_to "Log out", destroy_user_session_path, method: :delete%></li>
+             
+           </div>
+  </div>
       <%end%>
+
+
 
     </ul>
   </div>
