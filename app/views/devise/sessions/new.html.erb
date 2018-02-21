@@ -1,5 +1,5 @@
-<div class="row">
-  <div class="col-md-4 col-md-offset-4">
+<div class="row justify-content-center">
+  <div class="col-md-4 col-md-offset-8"align="center">
 
     <h2 class="text-center">Log in</h2>
     <br />
@@ -23,8 +23,8 @@
         <% if devise_mapping.rememberable? -%>
             <%= f.check_box :remember_me %> Remember Me
         <% end %>
-        <span class="pull-right">
-          <% link_to "Forgot Password", new_user_password_path %>
+        <span class="float-right">
+          <%= link_to "Forgot Password", new_user_password_path %>
         </span>
       </div>
 
