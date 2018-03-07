@@ -1,5 +1,15 @@
 @import "toastr";
 
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+//font variables
+
+$lobster: 'Lobster', sans-serif;
+
+:root {
+    --blur: 4px;
+}
+
 .avatar_small {
   width: 28px;
 }
@@ -17,12 +27,30 @@
 }
 
 
+//html
+
+body {
+
+}
+
+
+//navbar
+
+.navbar.navbar-toggleable-md.navbar-light.py-4.bg-faded {
+  position: absolute;
+  width: 100%;
+  font-weight: bold; color: black;
+  font-size: 1.2rem;
+  z-index: 1;
+}
+
 // search bar homepage
 .btn {
   border: #fff;
 }
 
 .btn.btn-outline-success:hover {
+
   color: #fff;
   background-color: #88BBD6;
   border-color: #5cb85c;
@@ -33,22 +61,40 @@
 .btn-outline-success {
   color:#605bae;
   width: 100;
+
 }
 
 .navbar.navbar-light.bg-light {
-
+  z-index: 1;
+  background: #ffc600;
+  position: absolute; bottom: 20%; left: 5%;
+  width: 90% !important;
 }
 
 .form-control.mr-sm-2 {
-  width: 90% !important;
+  width: 80% !important;
+
   z-index: 1;
 }
 
 // homepage slogan motto styles
-
-.motto, .slogan {
+.motto  {
+  font-family: $lobster;
+  position: absolute; bottom: 60%; left: 30%;
   text-align: center;
   z-index: 1;
+  font-size: 3.5rem;
+  color: #fff;
+}
+
+.slogan {
+  font-family: $lobster;
+  position: absolute; bottom: 50%; left: 21%;
+  text-align: center;
+  z-index: 1;
+  font-size: 1.8rem;
+  color: #fff;
+
 }
 
 //body images and general info
@@ -58,8 +104,22 @@
 
 .background-image {
   z-index: -1;
-  position: relative;
+  position: static;
   width: 100%;
   height: 100%;
-  opacity: 0.8;
+
+
+
+}
+
+img {
+
+  filter:blur(var(--blur));
+}
+
+
+// log in
+
+.col-md-4.col-md-offset-8 {
+  padding: top 50px;
 }

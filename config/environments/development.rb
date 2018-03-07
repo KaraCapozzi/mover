@@ -62,5 +62,5 @@ Rails.application.configure do
     user_name: ENV["SMTP_LOGIN_KEY"],
     password: ENV['SMTP_KEY']
   }
- 
+
 end
