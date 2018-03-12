@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,900');
 @import "toastr";
 
 .avatar_small {
@@ -17,6 +18,7 @@
 }
 
 
+
 // search bar homepage
 .btn {
   border: #fff;
@@ -28,38 +30,77 @@
   border-color: #5cb85c;
   outline: none;
   box-shadow: none;
+
 }
 
 .btn-outline-success {
-  color:#605bae;
+  color:#fff;
   width: 100;
 }
 
 .navbar.navbar-light.bg-light {
+  position: absolute;
+  top: 33rem;
+  left: 4rem;
+  width: 90%;
 
+  z-index: 1;
 }
 
 .form-control.mr-sm-2 {
   width: 90% !important;
-  z-index: 1;
+
 }
 
 // homepage slogan motto styles
 
-.motto, .slogan {
+.band-hero {
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  padding: 100px 0 80px;
+  width: 100%;
   text-align: center;
   z-index: 1;
+  font-size: 16px;
+  font-weight: 400;
+
 }
+
+
 
 //body images and general info
 
 
 
 
-.background-image {
+.background-wrapper {
   z-index: -1;
   position: relative;
   width: 100%;
-  height: 100%;
   opacity: 0.8;
+
+
+
+}
+
+.about {
+  position: relative;
+  padding: 150px 0 90px;
+  background-color: rgb(40, 48, 96);
+
+}
+
+.background-image-wrapper {
+
+  position: relative;
+  padding-left: 0px;
+  padding-right: 0px;
+  color: #fff;
+  background-image: linear-gradient(-180deg, rgba(40, 48, 96, 0.3) 2%, rgba(39, 47, 96, 0.6) 49%, rgb(40, 48, 96));
+}
+
+//site navigation
+//add space bw login and signup
+.ml-md-auto li {
+  margin-right: 1.5em;
 }
