@@ -21,6 +21,7 @@
 
 // search bar homepage
 .btn {
+
   border: #fff;
 }
 
@@ -34,16 +35,17 @@
 }
 
 .btn-outline-success {
+
   color:#fff;
   width: 100;
 }
 
 .navbar.navbar-light.bg-light {
+  opacity: 0.8;
   position: absolute;
   top: 33rem;
   left: 4rem;
   width: 90%;
-
   z-index: 1;
 }
 
@@ -103,4 +105,30 @@
 //add space bw login and signup
 .ml-md-auto li {
   margin-right: 1.5em;
+}
+
+
+
+// media queries
+
+@media (max-width: 991.98px) {
+
+  .navbar.navbar-light.bg-light .form-control.mr-sm-2 {
+    width: 70% !important;
+
+
+  }
+}
+
+@media (max-width: 767.98px) {
+
+form {
+    width: 100% !important;
+    margin-top: -200px;
+    color: black !important;
+    margin-left: -32px !important;
+
+  }
+
+
 }
