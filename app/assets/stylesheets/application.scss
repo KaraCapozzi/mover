@@ -150,7 +150,12 @@ em {
   // opacity:none !important;
 }
 
-
+footer {
+    // position: fixed;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+}
 // media query
 
 @media (max-width: 991.98px) {
@@ -168,10 +173,9 @@ em {
 
 form {
     width: 100% !important;
-    margin-top: -200px;
+    margin-top: -250px;
     color: black !important;
-    margin-left: -32px !important;
-
+    margin-left: -50px !important;
   }
 
 .slogan {
